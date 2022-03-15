@@ -8,9 +8,46 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'loader',
     pathMatch: 'full'
   },
+  {
+    path: 'loader',
+    loadChildren: () => import('./pages/loader/loader.module').then( m => m.LoaderPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'memu',
+    loadChildren: () => import('./pages/memu/memu.module').then( m => m.MemuPageModule)
+  },
+  {
+    path: 'travelpage',
+    loadChildren: () => import('./pages/travelpage/travelpage.module').then( m => m.TravelpagePageModule)
+  },
+  {
+    path: 'search',
+    loadChildren: () => import('./pages/search/search.module').then( m => m.SearchPageModule)
+  },
+  {
+    path: 'customercare',
+    loadChildren: () => import('./pages/customercare/customercare.module').then( m => m.CustomercarePageModule)
+  },
+  {
+    path: 'signout',
+    loadChildren: () => import('./pages/signout/signout.module').then( m => m.SignoutPageModule)
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./pages/about/about.module').then( m => m.AboutPageModule)
+  },
+
 ];
 
 @NgModule({

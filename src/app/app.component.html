@@ -1,3 +1,43 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu memuId = "main-memu" content-id ="main">
+    <ion-header>
+      <ion-title>Menu</ion-title>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+         <ion-item routerLink="/travelpage">
+         <ion-iocn name="bicycle-outline" slot="start"></ion-iocn>
+          <ion-label>Travel the places</ion-label>
+            </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="/search">
+            <ion-iocn name="bicycle-outline" slot="start"></ion-iocn>
+            <ion-label>Search Hotels</ion-label>
+          </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+          <ion-item routerLink="/customercare">
+            <ion-iocn name="mail" slot="start"></ion-iocn>
+            <ion-label>Customer care</ion-label>
+          </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+          <ion-item routerLink="login">
+            <ion-iocn name="mail" slot="start"></ion-iocn>
+            <ion-label>Sign out</ion-label>
+          </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <ion-item routerLink="about">
+              <ion-iocn name="mail" slot="start"></ion-iocn>
+              <ion-label>About</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          </ion-list>
+          </ion-content>
+
+  </ion-menu>
+  <ion-router-outlet id = "main"></ion-router-outlet>
 </ion-app>
