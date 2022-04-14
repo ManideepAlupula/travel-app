@@ -21,6 +21,7 @@
     "@angular/router": "~13.0.0",
     "@ionic/angular": "^6.0.0",
     "angular-route": "^1.8.2",
+    "connect": "^3.7.0",
     "images": "^3.2.4",
     "mysql": "^2.18.1",
     "rxjs": "~6.6.0",

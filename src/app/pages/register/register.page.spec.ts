@@ -22,3 +22,6 @@ describe('RegisterPage', () => {
     expect(component).toBeTruthy();
   });
 });
+
+//
+
